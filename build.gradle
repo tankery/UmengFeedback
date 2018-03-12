@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
 
     defaultConfig {
         minSdkVersion 8
@@ -20,5 +20,5 @@ android {
 }
 
 dependencies {
-    compile files('libs/com.umeng.fb.v5.1.0.jar')
+    api files('libs/com.umeng.fb.v5.1.0.jar')
 }
